@@ -1,0 +1,39 @@
+{
+    "workbench.colorTheme": "One Dark Pro",
+    "explorer.confirmDelete": false,
+    "workbench.iconTheme": "vscode-icons",
+    "editor.tabSize": 2,
+    "editor.fontFamily": "'Fira Code'",
+    "editor.fontSize": 18,
+    "editor.fontLigatures": true,
+    "editor.acceptSuggestionOnEnter": "off",
+    "terminal.integrated.fontSize": 16,
+    "explorer.confirmDragAndDrop": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "ruby.lint": {
+        "rubocop": true
+    },
+    "terminal.integrated.shellArgs.linux": [
+        "--login"
+    ],
+    "git.enableSmartCommit": true,
+    "solargraph.withSnippets": true,
+    "workbench.panel.location": "right",
+    "workbench.sideBar.location": "left",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": false,
+    "[scss]": {},
+    "[ruby]": {},
+    "extensions.ignoreRecommendations": false,
+    "scss.lint.boxModel": "warning",
+    "scss.lint.compatibleVendorPrefixes": "warning",
+    "scss.lint.duplicateProperties": "warning",
+    "scss.lint.float": "warning",
+    "scss.lint.important": "warning",
+    "scss.lint.universalSelector": "warning",
+    "scss.lint.zeroUnits": "warning",
+    "css.validate": false,
+    "scss.validate": false,
+    "stylelint.enable": true
+}
