@@ -1,0 +1,8 @@
+[user]
+	name = Brock McElroy
+	email = 28877984+brxck@users.noreply.github.com
+[core]
+	editor = nano
+[alias]
+	unstage = reset HEAD --
+	last = log -l HEAD
