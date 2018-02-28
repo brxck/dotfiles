@@ -1,0 +1,35 @@
+# exclude trash
+e:\.Trash.*$
+
+# exclude music (for now)
+e:^music/.*$
+
+# exclude downloads
+e:^downloads/.*$
+e:^usenet/.*$
+e:^torrents/.*$
+
+# exclude working files
+e:^projects/.*$
+
+# exclude unimportant images
+e:^pictures/other/.*$
+e:^pictures/wallpapers/.*$
+
+# exclude downloaded videos
+e:^videos/.*$
+
+# include config files
+i:^\.config/.*$
+
+# include ssh keys
+i:^\.ssh/.*$
+
+# include playlists
+i:^\.playlists/.*$
+
+# exclude boring system files
+e:^\..*/.*$
+
+# include everything else
+i:.*
