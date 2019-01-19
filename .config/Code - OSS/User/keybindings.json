@@ -35,5 +35,94 @@
   {
     "key": "ctrl+3",
     "command": "-workbench.action.focusThirdEditorGroup"
+  },
+  {
+    "key": "ctrl+shift+1",
+    "command": "workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+shift+`",
+    "command": "-workbench.action.terminal.new"
+  },
+  {
+    "key": "ctrl+alt+f",
+    "command": "editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "ctrl+h",
+    "command": "-editor.action.startFindReplaceAction"
+  },
+  {
+    "key": "ctrl+shift+'",
+    "command": "editor.action.selectToBracket"
+  },
+  {
+    "key": "ctrl+shift+0",
+    "command": "workbench.action.terminal.focusNext"
+  },
+  {
+    "key": "ctrl+shift+9",
+    "command": "workbench.action.terminal.focusPrevious"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "-workbench.action.gotoSymbol"
+  },
+  {
+    "key": "ctrl+shift+o",
+    "command": "outline.focus"
+  },
+  {
+    "key": "ctrl+k ctrl+l",
+    "command": "workbench.action.toggleCenteredLayout"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "-workbench.action.quickOpenNavigateNextInFilePicker",
+    "when": "inFilesPicker && inQuickOpen"
+  },
+  {
+    "key": "ctrl+e d",
+    "command": "editor.emmet.action.balanceIn"
+  },
+  {
+    "key": "ctrl+e f",
+    "command": "editor.emmet.action.balanceOut"
+  },
+  {
+    "key": "ctrl+e a",
+    "command": "editor.emmet.action.matchTag"
+  },
+  {
+    "key": "ctrl+e v",
+    "command": "editor.emmet.action.nextEditPoint"
+  },
+  {
+    "key": "ctrl+e c",
+    "command": "editor.emmet.action.prevEditPoint"
+  },
+  {
+    "key": "ctrl+e r",
+    "command": "editor.emmet.action.removeTag"
+  },
+  {
+    "key": "ctrl+e e",
+    "command": "editor.emmet.action.updateTag"
+  },
+  {
+    "key": "ctrl+e w",
+    "command": "editor.emmet.action.wrapWithAbbreviation"
+  },
+  {
+    "key": "ctrl+e s",
+    "command": "editor.emmet.action.splitJoinTag"
+  },
+  {
+    "key": "shift+space",
+    "command": "emmet.expandAbbreviation"
   }
 ]
