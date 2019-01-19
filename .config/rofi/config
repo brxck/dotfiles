@@ -1,0 +1,4 @@
+rofi.theme: /usr/share/rofi/themes/Adapta-Nokto.rasi
+rofi.modi: window,drun,run,combi
+rofi.font: inconsolata 16
+rofi.combi-modi: drun,run
