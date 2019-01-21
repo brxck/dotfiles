@@ -30,7 +30,7 @@ monitor = DisplayPort-0
 
 modules-left = player-mpris-tail
 modules-center = i3
-modules-right = date pulseaudio powermenu 
+modules-right = philips-hue date pulseaudio powermenu 
 
 width = 100%
 height = 27
@@ -242,6 +242,14 @@ doubleclick-left = ~/.config/polybar/player-mpris-tail.py raise
 type = custom/script
 exec = ~/.config/polybar/info-redshift-temp.sh
 interval = 5
+
+[module/philips-hue]
+type = custom/text
+content = 
+click-left = ~/.nvm/versions/node/v10.11.0/bin/hue -H 192.168.0.3 lights 3 on
+click-right = ~/.nvm/versions/node/v10.11.0/bin/hue -H 192.168.0.3 lights 3 off
+scroll-up = ~/.nvm/versions/node/v10.11.0/bin/hue -H 192.168.0.3 lights 3 +10%
+scroll-down = ~/.nvm/versions/node/v10.11.0/bin/hue -H 192.168.0.3 lights 3 -10%
 
 [settings]
 screenchange-reload = true
