@@ -15,3 +15,5 @@ export PATH="$PATH:/usr/share/sml/bin"
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f /home/brxck/.nvm/versions/node/v10.11.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash ] && . /home/brxck/.nvm/versions/node/v10.11.0/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.bash
+
+eval $(thefuck --alias)

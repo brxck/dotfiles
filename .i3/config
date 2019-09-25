@@ -7,13 +7,14 @@ set $left j
 set $right l
 
 ########## Autolaunch ##########
-exec --no-startup-id /usr/lib64/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nm-applet
 exec --no-startup-id aenea
 exec --no-startup-id feh --randomize --bg-fill ~/pictures/wallpapers/ultrawide/*
 exec --no-startup-id redshift
 exec --no-startup-id virt-manager
 exec --no-startup-id keepassxc
+exec --no-startup-id python /usr/share/sabnzbd/SABnzbd.py
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id ~/.i3/polybar.sh &
 
 ########## Workspaces ##########
@@ -22,36 +23,29 @@ set $ws1 "1: code"
 set $ws2 "2: web"
 set $ws3 "3"
 set $ws4 "4"
-set $ws5 "5"
-#------monitor------#
-set $ws6 "6: notes"
-set $ws7 "7: dev"
-set $ws8 "8: tune"
-set $ws9 "9: doc"
-set $ws10 "10: virt"
+set $ws5 "5: tune"
+set $ws6 "6: virt"
 
 ### Workspace Assignments ###
 
-assign [class="Code - OSS"] → $ws1
-for_window [class="Spotify"] move to workspace $ws8 # Spotify is weird
-assign [class="Lollypop"] → $ws8
-assign [class="Zeal"] → $ws9
-for_window [class="virt-manager"] move to workspace $ws10
+for_window [class="Spotify"] move to workspace $ws5 # Spotify is weird
+assign [class="Lollypop"] → $ws5
+for_window [class="virt-manager"] move to workspace $ws6
 
 ### Output Assignments ###
 set $primary DisplayPort-0
-set $secondary HDMI-A-0
+# set $secondary HDMI-A-0
 
 workspace $ws1 output $primary
 workspace $ws2 output $primary
 workspace $ws3 output $primary
 workspace $ws4 output $primary
 workspace $ws5 output $primary
-workspace $ws6 output $secondary
-workspace $ws7 output $secondary
-workspace $ws8 output $secondary
-workspace $ws9 output $secondary
-workspace $ws10 output $secondary
+# workspace $ws6 output $secondary
+# workspace $ws7 output $secondary
+# workspace $ws8 output $secondary
+# workspace $ws9 output $secondary
+# workspace $ws10 output $secondary
 
 ########## Styling ##########
 
