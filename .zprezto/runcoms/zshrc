@@ -11,8 +11,3 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
-
-# Aliases
-
-alias micro='TERM=xterm && micro' # hack to make micro work with kitty
-alias v='vagrant up && vagrant ssh'

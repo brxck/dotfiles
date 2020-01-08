@@ -35,13 +35,7 @@ zstyle ':prezto:load' pmodule \
   'spectrum' \
   'utility' \
   'completion' \
-  'prompt' \
-  'git' \
-  'autosuggestions' \
-  'ssh' \
-  'node' \
-  'python' \
-  'history-substring-search'
+  'prompt'
 
 #
 # Autosuggestions
@@ -90,10 +84,10 @@ zstyle ':prezto:module:editor' key-bindings 'emacs'
 #
 
 # Set the query found color.
- zstyle ':prezto:module:history-substring-search:color' found 'fg=black,bg=green'
+# zstyle ':prezto:module:history-substring-search:color' found ''
 
 # Set the query not found color.
- zstyle ':prezto:module:history-substring-search:color' not-found 'fg=black,bg=red'
+# zstyle ':prezto:module:history-substring-search:color' not-found ''
 
 # Set the search globbing flags.
 # zstyle ':prezto:module:history-substring-search' globbing-flags ''
@@ -228,5 +222,3 @@ zstyle ':prezto:module:prompt' theme 'sorin'
 # before deleting or overwriting files. Set to 'no' to disable this safer
 # behavior.
 # zstyle ':prezto:module:utility' safe-ops 'yes'
-
-zstyle ':prezto:module:terminal' auto-title 'yes'
