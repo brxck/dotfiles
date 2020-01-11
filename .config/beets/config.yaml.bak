@@ -1,0 +1,29 @@
+directory: ~/music
+library: ~/music/.beets/library.db
+
+original_date: yes
+import:
+  move: yes
+  log: ~/music/.beets/log.txt
+  languages: en
+  group_albums: yes
+  bell: yes
+
+ui:
+  color: yes
+
+paths:
+  default: $albumartist/$album%aunique{}/$track $title
+  singleton: Non-Album/$artist/$title
+  comp: Compilations/$album%aunique{}/$track $title
+
+plugins: replaygain mbsync lastgenre fetchart follow
+
+replaygain:
+  backend: gstreamer
+
+follow:
+  email: # Not included for obvious reasons
+  password: #
+  userid: #
+  auto: yes
