@@ -1,0 +1,36 @@
+#!/bin/bash
+
+case $2 in
+up)
+  width="100%"
+  height="50%"
+  y="0%"
+  x="0%"
+  ;;
+right)
+  width="50%"
+  height="100%"
+  y="0%"
+  x="50%"
+  ;;
+left)
+  width="50%"
+  height="100%"
+  y="0%"
+  x="0%"
+  ;;
+full)
+  width="100%"
+  height="100%"
+  y="0%"
+  x="0%"
+  ;;
+*)
+  width="100%"
+  height="50%"
+  y="50%"
+  x="0%"
+  ;;
+esac
+
+tdrop -ma -w $width -h $height -x $x -y $y -P 'wmctrl -i -r $wid -b add,above' $1

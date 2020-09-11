@@ -1,5 +1,0 @@
-#!/bin/bash
-# Stop aenea server.
-
-killall server_x11.py
-

@@ -7,13 +7,12 @@ set $left j
 set $right l
 
 ########## Autolaunch ##########
+exec --no-startup-id dunst
 exec --no-startup-id nm-applet
 exec --no-startup-id aenea
 exec --no-startup-id feh --randomize --bg-fill ~/pictures/wallpapers/ultrawide/*
 exec --no-startup-id redshift
-exec --no-startup-id virt-manager
-exec --no-startup-id keepassxc
-exec --no-startup-id python /usr/share/sabnzbd/SABnzbd.py
+exec --no-startup-id VirtualBox
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always --no-startup-id ~/.i3/polybar.sh &
 
@@ -33,7 +32,7 @@ assign [class="Lollypop"] → $ws5
 for_window [class="virt-manager"] move to workspace $ws6
 
 ### Output Assignments ###
-set $primary DisplayPort-0
+# set $primary DisplayPort-0
 # set $secondary HDMI-A-0
 
 workspace $ws1 output $primary

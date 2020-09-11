@@ -1,6 +1,0 @@
-#!/bin/bash
-# Start aenea server daemonized.
-
-killall server_x11.py
-~/.aenea/server/linux_x11/server_x11.py --daemon
-

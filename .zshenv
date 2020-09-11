@@ -1,4 +1,16 @@
 #
+# Defines environment variables.
+#
+# Authors:
+#   Sorin Ionescu <sorin.ionescu@gmail.com>
+#
+
+# Ensure that a non-login, non-interactive shell has a defined environment.
+if [[ ( "$SHLVL" -eq 1 && ! -o LOGIN ) && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zprofile"
+fi
+
+#
 # Executes commands at login pre-zshrc.
 #
 # Authors:
@@ -17,8 +29,8 @@ fi
 # Editors
 #
 
-export EDITOR='nano'
-export VISUAL='nano'
+export EDITOR='micro'
+export VISUAL='micro'
 export PAGER='less'
 
 #
@@ -44,6 +56,8 @@ typeset -gU cdpath fpath mailpath path
 # Set the list of directories that Zsh searches for programs.
 path=(
   /usr/local/{bin,sbin}
+  $HOME/.local/bin
+  $HOME/.poetry/bin
   $path
 )
 
