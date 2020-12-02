@@ -2,4 +2,6 @@
 	name = McElroy, Travis Brock
 	email = travismcelroy@email.arizona.edu
 [core]
-	editor = code-oss --wait
+	editor = micro
+[pull]
+	rebase = true
