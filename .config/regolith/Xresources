@@ -1,4 +1,7 @@
 i3-wm.bar.trayoutput: primary
+i3-wm.gaps.inner.size: 10
+i3-wm.gaps.outer.size: 10
+i3-wm.window.border.size: 2
+i3-wm.floatingwindow.border.size: 3
 Xft.dpi: 148
 Xcursor.size: 36
-
