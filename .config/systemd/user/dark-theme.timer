@@ -2,7 +2,7 @@
 Description=Change the GTK theme daily at a given time.
 
 [Timer]
-OnCalendar=*-*-* 16:00:00
+OnCalendar=*-*-* 18:00:00
 Persistent=true
 
 [Install]
