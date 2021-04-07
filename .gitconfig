@@ -5,7 +5,7 @@
 [core]
 	editor = micro
 	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
-	pager = batcat
+	pager = bat
 
 [pull]
 	rebase = true
