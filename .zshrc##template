@@ -23,6 +23,7 @@ fi
 setopt no_share_history
 unsetopt share_history
 
+{% if yadm.class != "devcontainer" %}
 alias ssh='kitty +kitten ssh'
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
@@ -33,6 +34,7 @@ eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
 eval "$(rbenv init -)"
+{% endif %}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+[[ ! -f ~/.zprezto/.p10k.zsh ]] || source ~/.zprezto/.p10k.zsh
