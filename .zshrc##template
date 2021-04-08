@@ -38,3 +38,6 @@ eval "$(rbenv init -)"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+alias light='systemctl --user start light-theme.service'
+alias dark='systemctl --user start dark-theme.service'
