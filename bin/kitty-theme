@@ -1,0 +1,25 @@
+#!/usr/bin/env python3
+import os
+import random
+import subprocess
+import argparse
+
+parser = argparse.ArgumentParser()
+parser.add_argument("theme")
+args = parser.parse_args()
+
+home = os.getenv("HOME")
+kitty = f"{home}/.config/kitty"
+choices_dir = f"{kitty}/themes"
+dest = f"{kitty}/theme.conf"
+
+if os.path.islink(dest):
+    os.remove(dest)
+
+new_theme_path = f"{choices_dir}/{args.theme}.conf"
+os.symlink(new_theme_path, dest)
+
+command = f"kitty @ set-colors -a -c {kitty}/kitty.conf"
+subprocess.run(command, shell=True)
+
+print(f"Kitty theme set to {args.theme}")

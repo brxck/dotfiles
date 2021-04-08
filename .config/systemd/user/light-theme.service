@@ -4,7 +4,7 @@ After=graphical.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh -c 'gsettings set org.gnome.desktop.interface gtk-theme Adwaita'
+ExecStart=/bin/sh -c 'gsettings set org.gnome.desktop.interface gtk-theme Adwaita && kitty-theme light'
 
 [Install]
 WantedBy=default.target
