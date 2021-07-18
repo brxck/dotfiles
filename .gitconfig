@@ -1,6 +1,6 @@
 [user]
 	name = Brock McElroy
-	email = 28877984+brxck@users.noreply.github.com
+	email = brock.mcelroy@equips.com
 
 [core]
 	editor = micro
@@ -19,6 +19,15 @@
 [rerere]
 	enabled = 1
 	autoupdate = 1
+
+[pager]
+    diff = delta
+    log = delta
+    reflog = delta
+    show = delta
+
+[interactive]
+    diffFilter = delta --color-only
 
 [alias]
   # View abbreviated SHA, description, and history graph of the latest 20 commits
