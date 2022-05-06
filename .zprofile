@@ -19,7 +19,7 @@ fi
 
 export EDITOR='micro'
 export VISUAL='micro'
-export PAGER='less'
+export PAGER='bat'
 
 #
 # Language

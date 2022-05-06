@@ -1,6 +1,8 @@
 i3-wm.bar.trayoutput: primary
-i3-wm.gaps.inner.size: 16
-i3-wm.window.border.size: 4
-i3-wm.floatingwindow.border.size: 5
-Xcursor.size: 36
+i3-wm.gaps.inner.size: 0
+i3-wm.window.border.size: 3
+i3-wm.floatingwindow.border.size: 4
+Xft.dpi: 120
+Xcursor.size: 28
 gnome.wallpaper: /home/brock/pictures/wallpaper.jpg
+i3-wm.bar.position: bottom

@@ -4,7 +4,7 @@ After=graphical.target
 
 [Service]
 Type=oneshot
-ExecStart=/bin/sh -c 'gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark && kitty-theme dark'
+ExecStart=/bin/sh -c 'gsettings set org.gnome.desktop.interface gtk-theme Adwaita-dark && kitty +kitten themes --reload-in=all Doom Vibrant'
 
 [Install]
 WantedBy=default.target
